@@ -1,0 +1,1 @@
+AllPatch.patch is an openssl-1.0.2l patch with chacha20-poly1305 x25519 Camellia-GCM -Equal-Prefences-Group-Ciphers patch my nginx.conf needs it
