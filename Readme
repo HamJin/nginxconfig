@@ -72,7 +72,7 @@ cd ../
 
 编译和安装：
 #BASH
-cd nginx-1.11.13/
+cd nginx-1.13.1/
 ./configure --add-module=../ngx_brotli --add-module=../nginx-ct-1.3.2 --with-openssl=../openssl --with-http_v2_module --with-http_ssl_module --with-http_gzip_static_module --with-http_spdy_module --with-http_v2_hpack_enc
 make
 sudo make install
