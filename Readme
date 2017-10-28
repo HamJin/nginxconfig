@@ -203,4 +203,4 @@ sudo vim /etc/logrotate.d/nginx
 sudo /usr/sbin/logrotate -f /etc/logrotate.d/nginx
 如果一切无误，后续 Nginx 的访问日志就会自动按天切分，并以年月日做为文件后缀，一目了然。
 在我的 Ubuntu 16.04.1 LTS 上，/etc/logrotate.d/ 目录中的日志切分任务会由 /etc/cron.daily/logrotate 来确保每天执行一次。查看 /etc/crontab 会发现 cron.daily 任务会在每天 6:25 执行，这就是 logrotate 每天切分日志的时机。
-如果想要让日志正好在零点被切分，可以修改 cron.daily 的执行时机，也可以把自己的 logrotate 配置文件放在 /etc/logrotate.d/ 之外，再手动配置 crontab 规则。
+如果想要让日志正好在零点被切分，可以修改 cron.daily 的执行时机，也可以把自己的 logrotate 配置文件放在 /etc/logrotate.d/ 之外，再手  动配置 crontab 规则。
